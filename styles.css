@@ -30,16 +30,27 @@ h2,
   margin-left: 3em;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  height: 60vh;
-  width: 40vh;
+h2 {
+  padding-top: 2em;
 }
 
-.grid-item {
-  background: blue;
+.grid-container {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 21% 21% 8% 50%;
+  width: 50em;
+  margin: 3em auto;
+}
+
+.grid-item-3 {
+  grid-row: 2/3;
+  grid-column: 1 / 2;
+}
+
+.grid-item-4 {
+  grid-row: 1/3;
+  grid-column: 4/5;
+  margin-top: 1em;
 }
 
 .portrait {
@@ -47,18 +58,21 @@ h2,
 }
 
 .lanscape {
-  height: 12em;
+  width: 20em;
 }
 
-.text-conatiner {
-  float: right;
+.photo {
+  margin-top: 2em;
+  border-radius: 20px;
 }
+
 .flexbox-container {
   display: flex;
   flex-wrap: wrap;
   gap: 2em;
   width: 75%;
   margin: 0 auto;
+  float: left;
 }
 
 .flex-item {
