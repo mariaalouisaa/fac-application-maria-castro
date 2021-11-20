@@ -17,14 +17,25 @@ header a {
   font-weight: bold;
   padding-left: 2em;
 }
-
-.switch {
-  width: 6em;
-  height: 3em;
+.toggle {
+  display: flex;
+  float: right;
 }
 
-.slider {
+.label {
   background-color: black;
+  border-radius: 20px;
+  width: 2.5em;
+  height: 1.2em;
+  padding: 3px;
+}
+
+.ball {
+  background-color: white;
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 50%;
+  position: absolute;
 }
 
 h1 {
