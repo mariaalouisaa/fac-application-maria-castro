@@ -3,7 +3,7 @@ body {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 header {
@@ -16,6 +16,15 @@ header {
 header a {
   font-weight: bold;
   padding-left: 2em;
+}
+
+.switch {
+  width: 6em;
+  height: 3em;
+}
+
+.slider {
+  background-color: black;
 }
 
 h1 {
