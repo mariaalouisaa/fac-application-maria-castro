@@ -81,7 +81,7 @@ h2,
 }
 
 h2 {
-  padding-top: 2em;
+  padding-top: 3.5em;
 }
 
 .grid-container {
@@ -89,7 +89,7 @@ h2 {
   grid-template-rows: 50% 50%;
   grid-template-columns: 21% 21% 8% 50%;
   width: 50em;
-  margin: 3em auto;
+  margin: -2em auto auto auto;
 }
 
 .grid-item-3 {
@@ -104,7 +104,7 @@ h2 {
 }
 
 .portrait {
-  height: 12em;
+  height: 13em;
 }
 
 .lanscape {
@@ -114,6 +114,12 @@ h2 {
 .photo {
   margin-top: 2em;
   border-radius: 20px;
+}
+
+.about-text {
+  line-height: 20px;
+  text-align: justify;
+  margin: 5px;
 }
 
 .flexbox-container {
@@ -209,4 +215,8 @@ textarea {
 
 .dark-mode a {
   color: white;
+}
+
+.dark-mode header {
+  border-bottom: white 2px solid;
 }
