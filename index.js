@@ -1,3 +1,21 @@
+// Javascript for Toggle Bar
+
+let toggleBar = document.getElementById("toggle");
+
+function nightMode(event) {
+  if (this.checked) {
+    document.querySelector("body").classList.add("dark-mode");
+    document.querySelector("header").classList.add("dark-mode");
+  } else {
+    document.querySelector("body").classList.remove("dark-mode");
+    document.querySelector("header").classList.remove("dark-mode");
+  }
+}
+
+toggleBar.addEventListener("change", nightMode);
+
+//Functionality of Fortune Teller Feature
+
 function play() {
   let responseText = document.querySelector("#ball-text");
 

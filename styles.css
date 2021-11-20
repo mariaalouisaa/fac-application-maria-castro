@@ -11,31 +11,60 @@ header {
   right: 0;
   z-index: 5;
   padding: 0.5em 2em;
+  background: white;
+  width: 100%;
+  text-align: right;
 }
 
 header a {
   font-weight: bold;
   padding-left: 2em;
 }
-.toggle {
-  display: flex;
-  float: right;
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 3em;
+  height: 1.5em;
 }
 
-.label {
-  background-color: black;
-  border-radius: 20px;
-  width: 2.5em;
-  height: 1.2em;
-  padding: 3px;
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
 .ball {
-  background-color: white;
-  width: 1.2em;
-  height: 1.2em;
-  border-radius: 50%;
   position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.ball:before {
+  position: absolute;
+  content: "";
+  height: 1.3em;
+  width: 1.3em;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .ball {
+  background-color: white;
+}
+
+input:checked + .ball:before {
+  transform: translateX(24px);
+  background-color: black;
 }
 
 h1 {
@@ -169,4 +198,13 @@ textarea {
 .footer {
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode a {
+  color: white;
 }
