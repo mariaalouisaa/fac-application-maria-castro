@@ -70,9 +70,14 @@ input:checked + .ball:before {
 }
 
 h1 {
-  padding-top: 20%;
+  padding-top: 3.5em;
   font-size: 3em;
-  margin-left: 1em;
+  margin: auto auto 0.5em 1em;
+}
+
+.sub-title {
+  font-size: large;
+  font-weight: bold;
 }
 
 h2,
@@ -82,6 +87,12 @@ h2,
 
 h2 {
   padding-top: 3.5em;
+}
+
+.abstract {
+  position: relative;
+  top: -3em;
+  width: 100%;
 }
 
 .grid-container {
@@ -133,6 +144,14 @@ h2 {
 
 .flex-item {
   width: 20%;
+}
+
+.flex-item a {
+  font-weight: bolder;
+}
+
+.flex-item a:hover {
+  text-decoration: underline overline;
 }
 
 .prog-img {
