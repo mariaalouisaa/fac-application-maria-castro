@@ -8,18 +8,22 @@ body {
   min-width: 100vw;
 }
 
+.fortune-mobile {
+  display: none;
+}
+
 section {
   min-height: 100vh;
 }
 
 header {
   position: fixed;
-  width: 100%;
-  background: white;
   top: 0;
-  z-index: 5;
-  text-align: right;
+  width: 100vw;
   padding: 20px;
+  z-index: 5;
+  background: white;
+  text-align: right;
   border-bottom: black 2px solid;
 }
 
@@ -98,7 +102,6 @@ h2 {
 .abstract {
   position: relative;
   top: -3em;
-  right: 0;
   width: 100vw;
 }
 
@@ -295,6 +298,61 @@ textarea {
 
     html body {
       min-width: fit-content;
+    }
+  }
+
+  @media screen and (max-width: 680px) {
+    .photo {
+      margin-left: 0;
+    }
+    .grid-container {
+      width: 85vw;
+    }
+  }
+
+  @media screen and (max-width: 625px) {
+    .fortune-app {
+      display: none;
+    }
+
+    .fortune-mobile {
+      display: block;
+      text-align: center;
+    }
+
+    .fortune-pic {
+      display: block;
+      width: 75vw;
+      border-radius: 20px;
+      border: 3px solid #17315a;
+      margin: 0 auto;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-rows: auto auto auto;
+      grid-template-columns: 50% 50%;
+      margin: -2em auto auto auto;
+    }
+
+    .grid-item-3 {
+      grid-row: 3/4;
+      grid-column: 1 / 3;
+    }
+
+    .grid-item-4 {
+      grid-row: 2/3;
+      grid-column: 1/3;
+    }
+
+    .prog-img {
+      width: 5em;
+    }
+
+    @media screen and (max-width: 505px) {
+      header a {
+        padding: 0 0 0 10px;
+      }
     }
   }
 }
