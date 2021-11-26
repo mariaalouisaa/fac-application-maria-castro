@@ -1,4 +1,4 @@
 # maria-castro-application
 
-Thiis is my application website for Founders and Coders.
-Hosted on GitPages https://mariaalouisaa.github.io/maria-castro-application/
+This is my application website for Founders and Coders.
+Hosted on GitHub Pages https://mariaalouisaa.github.io/fac-application-maria-castro/
