@@ -2,14 +2,9 @@
 
 const toggleBar = document.getElementById("toggle");
 
-function nightMode(event) {
-  if (this.checked) {
-    document.querySelector("body").classList.add("dark-mode");
-    document.querySelector("header").classList.add("dark-mode");
-  } else {
-    document.querySelector("body").classList.remove("dark-mode");
-    document.querySelector("header").classList.remove("dark-mode");
-  }
+function nightMode() {
+  document.querySelector("body").classList.toggle("dark-mode");
+  document.querySelector("header").classList.toggle("dark-mode");
 }
 
 toggleBar.addEventListener("change", nightMode);
