@@ -18,13 +18,13 @@ section {
 
 header {
   position: fixed;
-  top: 0;
+  inset-block-start: 0;
   width: 100vw;
   padding: 20px;
   z-index: 5;
   background: white;
-  text-align: right;
-  border-bottom: black 2px solid;
+  text-align: end;
+  border-block-end: black 2px solid;
 }
 
 header a {
@@ -37,7 +37,7 @@ header a {
   display: inline-block;
   width: 3em;
   height: 1.5em;
-  margin-right: 2.5em;
+  margin-inline-end: 2.5em;
 }
 
 .switch input {
@@ -80,7 +80,7 @@ input:checked + .ball:before {
 }
 
 h1 {
-  padding-top: 3.5em;
+  padding-block-start: 3.5em;
   font-size: 3em;
   margin: auto auto 0.5em 1em;
 }
@@ -92,16 +92,16 @@ h1 {
 
 h2,
 .sub-title {
-  margin-left: 3em;
+  margin-inline-start: 3em;
 }
 
 h2 {
-  padding-top: 3.5em;
+  padding-block-start: 3.5em;
 }
 
 .abstract {
   position: relative;
-  top: -3em;
+  inset-block-start: -3em;
   width: 100vw;
 }
 
@@ -110,7 +110,9 @@ h2 {
   grid-template-rows: 50% 50%;
   grid-template-columns: 21% 21% 8% 50%;
   width: 50em;
-  margin: -2em auto auto auto;
+  margin-block-start: -2em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
 }
 
 .grid-item-3 {
@@ -133,12 +135,12 @@ h2 {
 }
 
 .photo {
-  margin-top: 2em;
+  margin-block-start: 2em;
   border-radius: 20px;
 }
 
 .about-text {
-  line-height: 20px;
+  line-height: 22px;
   text-align: justify;
   margin: 5px;
 }
