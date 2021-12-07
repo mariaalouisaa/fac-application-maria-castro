@@ -35,9 +35,7 @@ function question(event) {
   const questionInput = document.querySelector("#input-bar");
 
   const questionText = document.querySelector("#question-text");
-  if (questionInput.value) {
-    questionText.innerHTML = `${questionInput.value}`;
-  }
+  if (questionInput.value) questionText.innerHTML = `${questionInput.value}`;
 
   document.getElementById("input-bar").value = " ";
   play();
